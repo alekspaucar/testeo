@@ -14,7 +14,6 @@ public class MetodoRecursivo {
         }
 
     }
-
     //fibonacci recursivo 
     public static int fibonacci(int n) {
         if (n == 0 || n == 1) {
