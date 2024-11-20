@@ -3,10 +3,10 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Testeo {
-  
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-/*  
+        /*  
         //susecion fibonacci
         System.out.println("ingrese un numero a calcular: " );
         Scanner leer = new Scanner(System.in);
@@ -32,9 +32,7 @@ public class Testeo {
         }else{
         System.out.println("el numero: "+ lista[respuesta]+" encontrado en la posicion: "+respuesta);      
         }
- */
-        
-        
+         */
         System.out.print("¿Cuántos números quieres ingresar? ");
         int n = scanner.nextInt();
         int[] arreglo = new int[n];
@@ -44,22 +42,18 @@ public class Testeo {
         }
         System.out.println("Los números ingresados son:");
         for (int numero : arreglo) {
-            System.out.print(numero+" ");
+            System.out.print(numero + " ");
         }
 
         MetodoOrdenamiento.insercion(arreglo);
-        System.out.println(" El metodo ordenado es:"+Arrays.toString(arreglo));
+        System.out.println(" El metodo ordenado es:" + Arrays.toString(arreglo));
         System.out.println("que numero desea buscar: ");
         int valorBuscar = scanner.nextInt();
         int respuesta = Busqueda.busquedaBinaria(arreglo, valorBuscar);
-        if(respuesta == -1){
+        if (respuesta == -1) {
             System.out.println("no se encuentra el numero: ");
         }
-        System.out.println("el numero: "+valorBuscar+" se encuentra en la posicion:" +respuesta);
+        System.out.println("el numero: " + valorBuscar + " se encuentra en la posicion:" + respuesta);
 
     }
 }
-
-
-
-    
