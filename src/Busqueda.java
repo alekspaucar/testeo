@@ -17,5 +17,27 @@ public static int busquedaBinaria(int[] arreglo, int valorBuscar) {
     }
     return -1;
 }
+    public static int busqueda(int[]arreglo,int valorBuscar){
+       int minimo=0;
+       int medio;
+       int maximo=arreglo.length-1;
 
+       while(minimo<=maximo){
+            medio=(minimo+maximo)/2;
+        if (arreglo[medio]==valorBuscar) {
+            return medio;    
+        }else if(arreglo[medio]<valorBuscar){
+            minimo = medio + 1;
+        }else{
+            maximo = medio-1;
+        }
+        }
+        return -1;
+
+    }
 }
+
+
+
+
+

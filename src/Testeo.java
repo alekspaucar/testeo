@@ -45,11 +45,11 @@ public class Testeo {
             System.out.print(numero + " ");
         }
 
-        MetodoOrdenamiento.insercion(arreglo);
+        MetodoOrdenamiento.intertion(arreglo);
         System.out.println(" El metodo ordenado es:" + Arrays.toString(arreglo));
         System.out.println("que numero desea buscar: ");
         int valorBuscar = scanner.nextInt();
-        int respuesta = Busqueda.busquedaBinaria(arreglo, valorBuscar);
+        int respuesta = Busqueda.busqueda(arreglo, valorBuscar);
         if (respuesta == -1) {
             System.out.println("no se encuentra el numero: ");
         }
